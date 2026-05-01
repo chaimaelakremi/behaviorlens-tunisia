@@ -1,0 +1,119 @@
+{
+  "facebook_pages": [
+    {
+      "id": "graph_api_facebook_mosaique",
+      "source": "graph_api",
+      "platform": "facebook",
+      "page_name": "Mosaique FM",
+      "url": "https://graph.facebook.com/v18.0/109999999/posts?fields=id,message,created_time,permalink_url,shares",
+      "posts": [
+        {
+          "id": "109999999_1234567890",
+          "message": "🔴 BREAKING: Central Bank announces emergency measures to combat inflation",
+          "created_time": "2026-05-01T09:15:00+0000",
+          "permalink_url": "https://facebook.com/MosaiqueFM/posts/1234567890",
+          "shares": {
+            "data": [],
+            "summary": {
+              "total_count": 234
+            }
+          },
+          "story": "Breaking News Post",
+          "type": "status",
+          "engagement": {
+            "likes_count": 5678,
+            "comments_count": 432,
+            "shares_count": 234
+          },
+          "comments": {
+            "data": [
+              {
+                "id": "comment_001",
+                "from": {
+                  "name": "Ahmed Ben Ali",
+                  "id": "user123"
+                },
+                "message": "الحكومة تأخرت كثيرا. يجب تحرك فوري",
+                "created_time": "2026-05-01T09:30:00+0000",
+                "like_count": 567
+              },
+              {
+                "id": "comment_002",
+                "from": {
+                  "name": "Fatima Zahra",
+                  "id": "user456"
+                },
+                "message": "هل هذه الإجراءات ستخفف من الغلاء؟",
+                "created_time": "2026-05-01T09:45:00+0000",
+                "like_count": 423
+              },
+              {
+                "id": "comment_003",
+                "from": {
+                  "name": "Mohamed Hassan",
+                  "id": "user789"
+                },
+                "message": "Too little, too late. Situation is already dire.",
+                "created_time": "2026-05-01T10:00:00+0000",
+                "like_count": 289
+              }
+            ],
+            "summary": {
+              "total_count": 432
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "instagram_business": [
+    {
+      "id": "graph_api_instagram_tap",
+      "source": "graph_api",
+      "platform": "instagram",
+      "business_account": "TAP Tunisia",
+      "url": "https://graph.instagram.com/v18.0/17999999/ig_media?fields=id,caption,media_type,timestamp,like_count",
+      "posts": [
+        {
+          "id": "17999999999999",
+          "caption": "#Tunisia #News: Government announces new employment program targeting youth. Read full story in bio.",
+          "media_type": "IMAGE",
+          "timestamp": "2026-05-01T08:00:00+0000",
+          "like_count": 8934,
+          "comments_count": 678,
+          "engagement": {
+            "reach": 45000,
+            "impressions": 67000
+          },
+          "comments": {
+            "data": [
+              {
+                "id": "ig_comment_001",
+                "from": {
+                  "username": "youth_tunisia",
+                  "id": "user111"
+                },
+                "text": "Finally! We need jobs, not promises",
+                "timestamp": "2026-05-01T08:15:00+0000",
+                "like_count": 234
+              },
+              {
+                "id": "ig_comment_002",
+                "from": {
+                  "username": "tunisia_voice",
+                  "id": "user222"
+                },
+                "text": "Will this actually create REAL jobs or just statistics?",
+                "timestamp": "2026-05-01T08:30:00+0000",
+                "like_count": 189
+              }
+            ],
+            "summary": {
+              "total_count": 678
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

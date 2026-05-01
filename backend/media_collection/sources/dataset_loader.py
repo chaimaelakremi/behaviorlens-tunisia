@@ -3,7 +3,7 @@ Dataset Loader
 Loads historical data from CSV files
 """
 
-import pandas as pd
+import polars as pl
 from datetime import datetime, timedelta
 from typing import List, Dict
 import logging
@@ -54,13 +54,13 @@ class DatasetLoader:
             logger.info(f"📊 Loading dataset: {dataset_name}")
             
             # Load CSV
-            df = pd.read_csv(file_path, encoding='utf-8')
+            df = pl.read_csv(file_path, encoding='utf-8')
             
             logger.info(f"   Loaded {len(df)} rows from CSV")
             
             posts = []
             
-            for idx, row in df.iterrows():
+            for row in df.iter_rows(named=True):
                 try:
                     # Get text content
                     text_col = config.get("text_column", "text")
@@ -81,7 +81,7 @@ class DatasetLoader:
                     timestamp = (datetime.now() - timedelta(days=days_ago)).isoformat()
                     
                     post = {
-                        "id": f"dataset_{dataset_name}_{idx}",
+                        "id": f"dataset_{dataset_name}_{hash(text)}",
                         "text": text,
                         "source": "dataset",
                         "platform": dataset_name,
@@ -99,7 +99,7 @@ class DatasetLoader:
                     posts.append(post)
                 
                 except Exception as e:
-                    logger.debug(f"   Skipping row {idx}: {str(e)}")
+                    logger.debug(f"   Skipping row: {str(e)}")
                     continue
             
             logger.info(f"   ✅ Loaded {len(posts)} posts from {dataset_name}")

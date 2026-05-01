@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#0f172a"/>
+  <rect x="10" y="10" width="108" height="108" rx="18" fill="#1e293b"/>
+  <text x="64" y="52" font-family="Arial Black,Arial" font-weight="900" font-size="28" fill="#ef4444" text-anchor="middle">BL</text>
+  <text x="64" y="78" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">BehaviorLens</text>
+  <text x="64" y="95" font-family="Arial,sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Tunisia</text>
+  <circle cx="30" cy="108" r="5" fill="#ef4444" opacity="0.7"/>
+  <circle cx="50" cy="108" r="5" fill="#f97316" opacity="0.7"/>
+  <circle cx="70" cy="108" r="5" fill="#eab308" opacity="0.7"/>
+  <circle cx="90" cy="108" r="5" fill="#22c55e" opacity="0.7"/>
+  <circle cx="110" cy="108" r="5" fill="#3b82f6" opacity="0.7"/>
+</svg>
